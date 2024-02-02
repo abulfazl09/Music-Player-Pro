@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./icons/all.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Abuli Music</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+
+            <div class="music_title">
+                <h1>my Music</h1>
+                <span>Artist</span>
+            </div>
+
+            <div class="music_cover">
+                <img src="./public/images/0.jpg" alt="">
+            </div>
+
+            <div class="music_controls">
+                <i id="randomPlay" class="fas fa-random"></i>
+                <i id="preMusic" class="fas fa-backward" title="Back"></i>
+                <i id="playBtn" class="fas fa-play" title="Play"></i>
+                <i id="nextMusic" class="fas fa-forward" title="Next"></i>
+                <i id="loopPlay" class="fas fa-sync"></i>
+            </div>
+            <audio src="./public/audio/0.mp3"></audio>
+            <div class="time">
+                <span id="currentTime">00:00</span>
+                <span id="duration">00:00</span>
+            </div>
+            <div class="progress_bar">
+                <div id="progress"></div>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><i onclick="showMenu()" class="fa fa-navicon"></i></li>
+                    <li><i class="fa fa-heart"></i></li>
+                    <li><i class="fa fa-volume-up"></i></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./app.js"></script>
+</body>
+
+</html>
